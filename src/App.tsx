@@ -4,6 +4,7 @@ import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 //import { TransactionsTable } from "./components/TransactionsTable";
 import { NewTransactionModal } from "./components/NewTransactionsModal";
+import { TransactionsTable } from './components/TransactionsTable';
 
 import { GlobalStyle } from "./styles/global";
 
@@ -25,7 +26,7 @@ export function App() {
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
 
       <Dashboard />
-
+      <TransactionsTable />
       <NewTransactionModal
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handleCloseNewTransactionModal}
